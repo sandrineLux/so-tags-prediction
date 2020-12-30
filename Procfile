@@ -1,1 +1,1 @@
-web: gunicorn so_tags_prediction:app
+web: gunicorn so-tags-prediction:app
