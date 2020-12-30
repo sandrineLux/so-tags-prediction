@@ -53,6 +53,8 @@ def index():
             out1 = map(lambda e : "<" + e + ">", out1) 
             str1 = ","
             output = str1.join(out1)  
+            if output == "":
+                output = "Sorry, not tags to suggest!"    
             return render_template('index.html', tags=output, question=Question)
         except ValueError as e:
             print("error")
